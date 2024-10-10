@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+        }
+
+        .red-box{
+            background-color: red;
+            float: left;
+        }
+        .green-box{
+            background-color: green;
+            float: left;
+        }
+
+        .blue-box{
+            background-color: blue;
+            float: left;
+        }
+
+        .next{
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+
+        .black-box{
+            border: 2px dashed black;
+            display: inline-block;
+        }
+
+        .clear-box{
+            clear: left;
+            background-color: lightblue;
+        }
+
+        .container::after{
+            content: ""; /*content가 없으면 동작을 안 함!!! */
+            display: block; /*기본 content 단순 텍스트 inline */
+            clear: both; /*clear 목적은 float를 clear하는 목적이니까 both가 나음 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box black-box">
+    </div><div class="box black-box">
+    </div><div class="box black-box">
+    </div>
+
+    <div class="container">
+        <div class="box red-box"></div>
+        <div class="box green-box"></div>
+        <div class="box blue-box"></div>
+        <!-- <div class="box clear-box"></div> -->
+    </div>
+
+    <div class="next"></div>
+
+
+    <!--
+        float로 공간 인식이 안 될 때, 
+        1. 임의의 크기 인식 되는 요소를 추가
+        2. clear
+            1) 마지막 요소 clear
+            2) 가상 요소 선택자로 clear
+    -->
+    
+</body>
+</html>
