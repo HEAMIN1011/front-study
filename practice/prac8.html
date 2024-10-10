@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 600px;
+            margin: 0 auto;
+            border: 3px solid black;
+            display: flex;
+        }
+
+        .container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .box1{
+            width: 50%;
+            float: left;
+            background-color: lightgrey;
+            border: 1px solid black;
+        }
+
+        .box2{
+            width: 50%;
+            float: left;
+            background-color: lightgrey;
+            border: 1px solid black;
+        }
+
+        img{
+            width: 150px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="../images/rice.jpg">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eius possimus asperiores ducimus soluta esse laudantium suscipit in sunt quae nesciunt neque, cupiditate tempora voluptatem provident velit minus ad rerum.</p>
+        </div>
+        <div class="box2">
+            <img src="../images/rice.jpg">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eius possimus asperiores ducimus soluta esse laudantium suscipit in sunt quae nesciunt neque, cupiditate tempora voluptatem provident velit minus ad rerum.</p>
+        </div>
+    </div>
+</body>
+</html>
