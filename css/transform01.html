@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            /* transform: translate(50px, 100px); */
+            /* transform: scale(0.2, 0.2); */
+            /* transform: skewY(45deg); */
+            transform: rotate(60deg) translateY(100px); /*2개 다 적용할 거면 따로 말고 한 줄에 동시에 써야 함*/
+            transform-origin: right bottom;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
