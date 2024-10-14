@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            height: 1300px;
+            border: 1px solid black;
+        }
+        .top{
+            background-color: lightgray;
+            width: 1000px;
+            height: 50px;
+            justify-content: center;
+        }
+        .top .box{
+            /* width: 50px; */
+            height: 50px;
+            border: 1px solid black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu{
+            height: 80px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-box{
+            /* width: 50px; */
+            height: 80px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+
+        .middle{
+            background-color: cornflowerblue;
+            height: 500px;
+            width: 1000px;
+            display: flex;
+            flex-direction: column;
+        }
+        .middle-box{
+            height: 33%;
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer{
+            width: 1000px;
+            height: 100px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="box">롯데월드 어드벤처</box>
+            <div class="box">롯데월드 어드벤처 부산</div>
+            <div class="box">SEOUL SKY</div>
+            <div class="box">롯데월드 파크</div>
+            <div class="box">롯데월드 아쿠아리움 하노이</div>
+            <div class="box">
+                <div class="box">Language</div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="menu-box">이미지</div>
+            <div class="menu-box">소개
+                <div class="sub-menu-box"></div>
+            </div>
+            <div class="menu-box">프로그램-이벤트</div>
+            <div class="menu-box">이용안내</div>
+            <div class="menu-box">온라인예매</div>
+            <div class="menu-box">단체 안내</div>
+            <div class="menu-box">고객소리함</div>
+        </div>
+
+        <div class="middle">
+            <div class="middle-box">아쿠아리움 관련 광고 & 운영시간</div>
+            <div class="middle-box">AQUARIUM NOW</div>
+            <div class="middle-box">공지사항</div>
+        </div>
+
+        <div class="footer">
+            <div class=footer-box></div>
+        </div>
+    </div>
+</body>
+</html>

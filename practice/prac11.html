@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 700px;
+            height: 500px;
+            margin: auto;
+            margin-top: 50px;
+            border: 1px solid black;
+            /* display: flex; */
+            flex-direction:column;
+            
+        }
+
+        .content1{
+            display: flex;
+            justify-content: space-between;
+
+            
+        }
+        .content1 .box1{
+            background-color: red;
+            width: 200px;
+            height: 100px;
+            justify-content: center;
+            color: white;
+
+            align-content: center;
+            text-align: center;
+        }
+        .content1 .box2{
+            background-color: red;
+            height: 100px;
+            height: 100px;
+            color: white;
+            align-content: center;
+            text-align: center;
+        }
+        .content2{
+            display: flex;
+        }
+        .box3{
+            background-color: orange;
+            width: 490px;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
+        .black-box{
+            background-color: black;
+            width: 100px;
+            height: 50px;
+            margin: 30px;
+            transition-property:all; /*all로 해도 되고, transition으로 해도 됨*/
+            transition-duration: 1s;
+            
+        }
+        .black-box:hover{
+            transform: scale(1.4, 1.4);    /*transform scale : 옆에 애들한테 밀리지 않고 혼자 크기 바뀜*/
+            
+        }
+        .box4{
+            background-color: green;
+            width: 210px;
+            height: 300px;
+            color: white;
+            align-content: center;
+            text-align: center;
+        }
+        .box5{
+            background-color: blue;
+            width: 700px;
+            height: 100px;
+            color: white;
+            align-content: center;
+            text-align: center;
+        }
+        
+        /* .align-center-font-white{
+            color: white;
+            align-content: center;
+            text-align: center;
+        } 이렇게 해서 여기 해당되는 애들한테 class 이름을 align-center-font-white로 걸어서 한 번에 적용해도 됨 */
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="content1">
+            <div class="box1">메인메뉴</div>
+            <div class="box2">마이페이지</div>
+        </div>
+
+        <div class="content2">
+            <div class="box3">
+                <div class="black-box"></div>
+                <div class="black-box"></div>
+                <div class="black-box"></div>
+                <div class="black-box"></div>
+                <div class="black-box"></div>
+                <div class="black-box"></div>
+            </div>
+            <div class="box4">aisde</div>
+        </div>
+        <div class="content5">
+            <div class="box5">footer</div>
+        </div>
+    </div>
+</body>
+</html>
