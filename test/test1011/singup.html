@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 1000px;
+            background-color: rgb(14, 63, 14);
+            
+        }
+        .up-bar{
+            height: 50px;
+            width: 500px;
+            
+            padding: 20px;
+            
+            background-color: darkgray;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            
+        }
+        .signup-box{
+            height: 50px;
+            width: 250px;
+            color: white;
+            background-color: green;
+        }
+    
+        .login-box{
+            height: 50px;
+            width: 250px;
+            color: white;
+        }
+        
+        h1{
+            color: white;
+            font-weight: 100;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .start-box{
+            background-color: green;
+            color: white;
+            display: flex;
+            font-size: 30px;
+
+            width: 500px;
+            height: 50px;
+            margin: auto;
+
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="up-bar">
+            <div class="signup-box">Sign Up</div>
+            <div class="login-box">Log In</div>
+        </div>
+
+        <h1>Sign Up for Free</h1>
+
+        <form>
+            <div class="email-box"><input type="email"></div><br>
+            <div class="password-box"><input type="password"></div><br>
+            <div class="password2-box"><input type="password"></div><br>
+        </form>
+
+        <div class="start-box">GET STARTED</div>
+    </div>
+</body>
+</html>
