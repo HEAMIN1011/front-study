@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+
+<style>
+#box {
+width:100px;
+height:100px;
+background-color: red;
+}
+</style>
+</head>
+<body>
+
+<div id="box"></div>
+
+
+<script>
+
+const btn_box  = document.getElementById('box');
+
+        document.getElementById('box').onclick = function(){
+            alert('프로퍼티 등록 클릭함수');
+        };
+
+        btn_box.onmouseover = ()=>{ console.log('마우스가 올라옴');};
+        btn_box. = ()=>{ console.log('마우스가 나감');};
+</script>
+</body>
+</html>
